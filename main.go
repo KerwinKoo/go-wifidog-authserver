@@ -1,21 +1,13 @@
 package main
 
 import (
-	"log"
-	"net/http"
-
+	"github.com/KerwinKoo/gowauth/wdmethods"
 	"github.com/labstack/echo"
 )
 
-func wdPing(c echo.Context) error {
-	res := "pong"
-	log.Println("answer:", res)
-	return c.String(http.StatusOK, "pong")
-}
-
 func main() {
 	e := echo.New()
-	e.GET("/wifidog/ping/", wdPing)
+	e.GET("/wifidog/ping/", wdmethods.WdPing)
 
 	e.Logger.Fatal(e.Start(":8082"))
 }

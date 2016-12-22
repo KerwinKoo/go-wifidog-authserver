@@ -13,6 +13,7 @@ type LoginCtx struct {
 	GwAddress string `json:"gw_address"`
 	GwID      string `json:"gw_id"`
 	GwPort    string `json:"gw_port"`
+	URL       string `json:"url"`
 }
 
 // Ping response wifidog's Ping Get method in v1
@@ -28,6 +29,7 @@ func Login(c echo.Context) error {
 	loginCtx.GwAddress = c.QueryParam("gw_address")
 	loginCtx.GwID = c.QueryParam("gw_id")
 	loginCtx.GwPort = c.QueryParam("gw_port")
+	loginCtx.URL = c.QueryParam("url")
 
 	ctxJSON, err := ffjson.Marshal(&loginCtx)
 	if err != nil {

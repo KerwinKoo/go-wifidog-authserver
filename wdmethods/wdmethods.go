@@ -29,10 +29,10 @@ func Login(c echo.Context) error {
 	loginCtx.GwID = c.QueryParam("gw_id")
 	loginCtx.GwPort = c.QueryParam("gw_port")
 
-	ctxJson, err := ffjson.Marshal(&loginCtx)
+	ctxJSON, err := ffjson.Marshal(&loginCtx)
 	if err != nil {
 		panic(err)
 	}
-	log.Println("wifidog login:", string(ctxJson))
-	return c.String(http.StatusOK, string(ctxJson))
+	log.Println("wifidog login:", string(ctxJSON))
+	return c.String(http.StatusOK, string(ctxJSON))
 }

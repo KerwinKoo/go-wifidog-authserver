@@ -38,6 +38,7 @@ func main() {
 	wdGroup.GET("/ping/", loginCtx.Ping)
 	wdGroup.GET("/login/", loginCtx.Login)
 	wdGroup.GET("/logincheck", loginCtx.LoginCheck)
+	wdGroup.GET("/auth/", loginCtx.Auth)
 
 	e.Logger.Fatal(e.Start(":8082"))
 }

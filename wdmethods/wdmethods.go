@@ -80,3 +80,8 @@ func (loginCtx *LoginCtx) LoginCheck(c echo.Context) error {
 
 	return c.String(http.StatusOK, string(body))
 }
+
+// Auth auth method
+func (loginCtx *LoginCtx) Auth(c echo.Context) error {
+	return c.String(http.StatusOK, "Auth: 1")
+}

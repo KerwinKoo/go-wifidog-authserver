@@ -1,0 +1,17 @@
+{{define "wdargs"}}wdargs: {{.}}
+
+<form action="http://192.168.199.1:2060/wifidog/auth" method="get">
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="token" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="" required>
+
+    <button type="submit">Login</button>
+  </div>
+
+</form>
+
+{{end}}

@@ -4,7 +4,7 @@ Go-wifidog-authserver is designed to be a simple wifidog authentication-server t
 
 ## Quick Start
 
-There is a bin auth-server program in path of `example/gowauth`, Which you can used to test your WiFiDog. 
+There is a bin auth-server program in path of `example/gowauth` which you can used to test your WiFiDog. 
 
 ```
 $ git clone https://github.com/KerwinKoo/gowauth.git
@@ -16,9 +16,9 @@ $ ./gowauth
 
 ```  
 
-After running the command above, the example auth-server will listen the `8082` port as you see.
+After running the command above, the example program will listen to the `8082` port as you can see.
 
-Modify the WiFiDog's configuration file in router:
+Modify the WiFiDog's configuration file in your router:
 
 ```
 config wifidog
@@ -31,10 +31,10 @@ config wifidog
 
 ```
 
-Fill your server IP which running this auth-server into `option auth_server_hostname`, and using '8082' port to `option auth_server_port`, then run the command `/etc/init.d/wifidog stop && /etc/init.d/wifidog start` to restart the wifidog daemon in your router.
+Fill your auth-server's IP into `option auth_server_hostname`, fill '8082' port into `option auth_server_port`, and then run the command `/etc/init.d/wifidog stop && /etc/init.d/wifidog start` to restart the wifidog daemon in your router.
 
 
-Back to the platform which running `gowauth`, the auth-server will receive a `ping` request from WiFiDog with  like:
+Back to the platform which `gowauth` is running on, the auth-server will receive a `ping` request from WiFiDog like:
 
 ```
 time=2016-12-23T11:21:04+08:00, method=GET, uri=/wifidog/ping/?gw_id=......

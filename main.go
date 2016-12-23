@@ -39,6 +39,7 @@ func main() {
 	wdGroup.GET("/login/", loginCtx.Login)
 	wdGroup.GET("/logincheck", loginCtx.LoginCheck)
 	wdGroup.GET("/auth/", loginCtx.Auth)
+	wdGroup.GET("/portal/", loginCtx.Portal)
 
 	e.Logger.Fatal(e.Start(":8082"))
 }

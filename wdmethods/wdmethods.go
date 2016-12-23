@@ -85,3 +85,8 @@ func (loginCtx *LoginCtx) LoginCheck(c echo.Context) error {
 func (loginCtx *LoginCtx) Auth(c echo.Context) error {
 	return c.String(http.StatusOK, "Auth: 1")
 }
+
+// Portal portal method
+func (loginCtx *LoginCtx) Portal(c echo.Context) error {
+	return c.Redirect(http.StatusMovedPermanently, "https://www.baidu.com")
+}

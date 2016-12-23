@@ -1,6 +1,6 @@
-## gowauth: Golang Authentication server for WiFiDog.
+## go-wifidog-authserver: Golang Authentication server for WiFiDog.
 
-Gowauth is designed to be a simple wifidog-auth-server to communicate with [Apfree WiFiDog](https://github.com/liudf0716/apfree_wifidog). This project is supported by HTTP WEB Framework of [echo](https://github.com/labstack/echo) which developed by **Golang**
+Go-wifidog-authserver is designed to be a simple wifidog-auth-server to communicate with [Apfree WiFiDog](https://github.com/liudf0716/apfree_wifidog). This project is supported by HTTP WEB Framework of [echo](https://github.com/labstack/echo) which developed by **Golang**
 
 ## Quick Start
 
@@ -31,7 +31,7 @@ config wifidog
 
 ```
 
-Fill your server IP which running this auth-server into `option auth_server_hostname`, then run the command `/etc/init.d/wifidog stop && /etc/init.d/wifidog start` to restart the wifidog daemon in your router.
+Fill your server IP which running this auth-server into `option auth_server_hostname`, and using '8082' port to `option auth_server_port`, then run the command `/etc/init.d/wifidog stop && /etc/init.d/wifidog start` to restart the wifidog daemon in your router.
 
 
 Back to the platform which running `gowauth`, the auth-server will receive a `ping` request from WiFiDog with  like:

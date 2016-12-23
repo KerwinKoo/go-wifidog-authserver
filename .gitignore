@@ -24,7 +24,7 @@ _testmain.go
 *.prof
 
 # ignore bin file 
-gowauth
+/gowauth
 
 # ignore project debug generated paths
 /tmp

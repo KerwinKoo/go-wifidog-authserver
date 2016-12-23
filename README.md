@@ -1,4 +1,4 @@
-## go-wifidog-authserver: Golang Authentication server for WiFiDog.
+## go-wifidog-authserver: Golang Authentication Server for WiFiDog.
 
 Go-wifidog-authserver is designed to be a simple wifidog-auth-server to communicate with [Apfree WiFiDog](https://github.com/liudf0716/apfree_wifidog). This project is supported by HTTP WEB Framework of [echo](https://github.com/labstack/echo) which developed by **Golang**
 

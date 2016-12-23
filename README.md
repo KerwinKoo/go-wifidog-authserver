@@ -4,7 +4,7 @@ Go-wifidog-authserver is designed to be a simple wifidog authentication-server t
 
 ## Quick Start
 
-A binary auth-server program for an example, you can run it in Linxu os for testing:
+There is a bin auth-server program in path of `example/gowauth`, Which you can used to test your WiFiDog. 
 
 ```
 $ git clone https://github.com/KerwinKoo/gowauth.git

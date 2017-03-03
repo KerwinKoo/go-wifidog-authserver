@@ -4,7 +4,7 @@ Go-wifidog-authserver is designed to be a simple wifidog authentication-server t
 
 ## Quick Start
 
-There is a bin auth-server program in path of `example/gowauth` which you can used to test your WiFiDog. 
+There is a bin auth-server program in path of `example/gowauth` which you can use to test your WiFiDog. 
 
 ```
 $ git clone https://github.com/KerwinKoo/gowauth.git

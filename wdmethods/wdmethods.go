@@ -1,12 +1,11 @@
 package wdmethods
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
-	"fmt"
-
-	"github.com/KerwinKoo/gowauth/utils"
+	"github.com/KerwinKoo/go-wifidog-authserver/utils"
 	"github.com/labstack/echo"
 	"github.com/pquerna/ffjson/ffjson"
 )

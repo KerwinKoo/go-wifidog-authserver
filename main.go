@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"io"
 
-	"github.com/KerwinKoo/gowauth/wdmethods"
+	"github.com/KerwinKoo/go-wifidog-authserver/wdmethods"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )

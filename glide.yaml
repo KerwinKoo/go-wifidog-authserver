@@ -1,0 +1,8 @@
+package: github.com/KerwinKoo/go-wifidog-authserver
+import:
+- package: github.com/labstack/echo
+  subpackages:
+  - middleware
+- package: github.com/pquerna/ffjson
+  subpackages:
+  - ffjson
